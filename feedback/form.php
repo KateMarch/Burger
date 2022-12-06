@@ -27,7 +27,7 @@ $items = $db->query("SELECT id, text, name, image FROM feedback ")
                                     <p><?=$item['text']?></p>
                                     <div class="testmonial_author">
                                         <div class="thumb">
-                                            <img src="img/testmonial/1.png" alt="">
+                                            <img src="<?=$item['image']?>" alt="">
                                         </div>
                                         <h4><?=$item['name']?></h4>
                                         <div class="stars">

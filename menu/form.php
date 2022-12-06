@@ -18,7 +18,7 @@ $items = $db->query("SELECT id, name, price, description, img FROM menu ")
             <div class="col-xl-6 col-md-6 col-lg-6">
                 <div class="single_delicious d-flex align-items-center">
                     <div class="thumb">
-                        <img src="img/burger/1.png" alt="">
+                        <img src="<?=$item['img']?>" alt="">
                     </div>
                     <div class="info">
                         <h3><?=$item['name']?></h3>
