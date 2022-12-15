@@ -1,6 +1,6 @@
 <?php
 $db = require $_SERVER['DOCUMENT_ROOT'] . '/common/db.php';
-$items = $db->query("SELECT id, name, price, description, img FROM menu ")
+$items = $db->query("SELECT id, name, price, description, img FROM menu ");
 ?>
 <div class="best_burgers_area">
     <div class="container">

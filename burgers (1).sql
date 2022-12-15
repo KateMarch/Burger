@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 06 2022 г., 09:27
+-- Время создания: Дек 15 2022 г., 09:51
 -- Версия сервера: 5.6.51
 -- Версия PHP: 7.1.33
 
@@ -61,10 +61,12 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `name`, `price`, `description`, `img`) VALUES
-(1, 'Гамбургер', '100', 'описание', 'http://localhost/img/burger/1.png'),
-(2, 'Чизбургер', '200', 'описание ', 'http://localhost/img/burger/2.png'),
-(3, 'Чикенбургер', '250', 'описание', 'http://localhost/img/burger/3.png'),
-(4, 'Веджибургер', '150', 'описание', 'http://localhost/img/burger/4.png');
+(1, 'Гамбургер', '100', 'Разрезанная пополам булочка с жареной котлетой из мясного фарша в середине. Не только вкусную, но еще и полезно.', 'http://localhost/img/burger/1.png'),
+(2, 'Чизбургер', '200', 'Разрезанная пополам булочка и поджаренная на кунжутном масле с говяжьей котлетой, сыром и салатным листом. ', 'http://localhost/img/burger/2.png'),
+(3, 'Чикенбургер', '250', 'Фирменный куриный бургер с нежной курочкой в хрустящей панировке и листовым салатом под кетчупом и майонезом на подрумяненной булочке.', 'http://localhost/img/burger/3.png'),
+(4, 'Веджибургер', '150', 'Это вегетарианский гамбургер, который не содержит убойных продуктов. Замена мясной прослойки может быть сделана из овощей, соевого текстурата. ', 'http://localhost/img/burger/4.png'),
+(5, 'Джуниор', '110', 'Под воздушной булочкой скрываются отборные стрипсы в оригинальной хрустящей панировка, сочная курица, свежий огурчик и фирменный соус.', 'http://localhost/img/burger/6.png'),
+(6, 'Шефбургер', '169', 'Нежная и сочная курица в оригинальной панировке с идеально подобранным сочетанием трав и специй.', 'http://localhost/img/burger/7.png');
 
 -- --------------------------------------------------------
 
@@ -82,7 +84,8 @@ CREATE TABLE `slaider` (
 --
 
 INSERT INTO `slaider` (`id`, `picture`) VALUES
-(1, 'https://catherineasquithgallery.com/uploads/posts/2021-02/1614254920_41-p-oboi-s-chernim-fonom-48.jpg');
+(1, 'https://mtdata.ru/u14/photo4B0D/20517148567-0/original.jpg'),
+(2, 'http://images.unsplash.com/photo-1547647407-953870c65ae3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9');
 
 --
 -- Индексы сохранённых таблиц
@@ -114,19 +117,19 @@ ALTER TABLE `slaider`
 -- AUTO_INCREMENT для таблицы `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT для таблицы `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `slaider`
 --
 ALTER TABLE `slaider`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
