@@ -41,7 +41,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.php">home</a></li>
+                                        <li><a  href="index.php">home</a></li>
                                         <li><a href="about.html">About</a></li>
                                         <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
@@ -55,7 +55,6 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
-                                        <li><a class="admin" href="Admin.php">Admin</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -108,12 +107,16 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/slider/form.php'?>
-    <!-- slider_area_end -->
+    <!-- bradcam_area_start -->
+    <div class="bradcam_area breadcam_bg overlay">
+        <h3>Menu</h3>
+    </div>
+    <!-- bradcam_area_end -->
 
+    <!-- best_burgers_area_start  -->
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/burger/burger.php'?>
+    <!-- best_burgers_area_end  -->
 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/menu/form.php'?>
     <!-- features_room_startt -->
     <div class="Burger_President_area">
             <div class="Burger_President_here">
@@ -145,57 +148,104 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- features_room_end -->
-    <!-- about_area_start -->
-    <div class="about_area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="about_thumb2">
-                            <div class="img_1">
-                                <img src="img/about/1.png" alt="">
-                            </div>
-                            <div class="img_2">
-                                <img src="img/about/2.png" alt="">
+    </div>
+    <!-- features_room_end -->
+
+    <!-- testimonial_area_start  -->
+    <div class="testimonial_area ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-60 text-center">
+                        <span>Testimonials</span>
+                        <h3>Happy Customers</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testmonial_active owl-carousel">
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+                                            sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
+                                            sed
+                                            neque.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/1.png" alt="">
+                                            </div>
+                                            <h4>Kristiana Chouhan</h4>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 offset-lg-1 col-md-6">
-                        <div class="about_info">
-                            <div class="section_title mb-20px">
-                                <span>About Us</span>
-                                <h3>Best Burger <br>
-                                        in your City</h3>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+                                            sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
+                                            sed
+                                            neque.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/2.png" alt="">
+                                            </div>
+                                            <h4>Arafath Hossain</h4>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate</p>
-                            <div class="img_thumb">
-                                <img src="img/jessica-signature.png" alt="">
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+                                            sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
+                                            sed
+                                            neque.</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/3.png" alt="">
+                                            </div>
+                                            <h4>A.H Shemanto</h4>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- about_area_end -->
-    <!-- video_area_start -->
-    <div class="video_area video_bg overlay">
-        <div class="video_area_inner text-center">
-            <h3>Burger <br>
-                Bachelor</h3>
-            <span>How we make delicious Burger</span>
-            <div class="video_payer">
-                <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" class="video_btn popup-video">
-                    <i class="fa fa-play"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- video_area_end -->
-
-    <!-- testimonial_area_start  -->
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/feedback/form.php'?>
-    <!-- testimonial_area_ned  -->
+</div>
+<!-- testimonial_area_ned  -->
 
     <!-- instragram_area_start -->
     <div class="instragram_area">
@@ -246,6 +296,7 @@
     </div>
     <!-- instragram_area_end -->
 
+    <!-- footer_start  -->
     <footer class="footer">
             <div class="footer_top">
                 <div class="container">
@@ -259,7 +310,7 @@
                                         green lane New York-1782 <br>
                                         <a href="#">info@burger.com</a></p>
                                 <a class="number" href="#">+10 378 483 6782</a>
-    
+
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 col-lg-4">
@@ -271,7 +322,7 @@
                                         green lane New York-1782 <br>
                                         <a href="#">info@burger.com</a></p>
                                 <a class="number" href="#">+10 378 483 6782</a>
-    
+
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-12 col-lg-4">
@@ -331,8 +382,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     </div>
                 </div>
             </div>
-        </footer>
-
+    </footer>
+    <!-- footer_end  -->
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>

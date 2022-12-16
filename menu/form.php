@@ -22,10 +22,11 @@ $items = $db->query("SELECT id, name, price, description, img FROM menu ");
                     </div>
                     <div class="info">
                         <h3><?=$item['name']?></h3>
-                        <p><?=$item['description']?></p>
+                        <p></p>
                         <span><?=$item['price']?>₽</span>
                     </div>
                 </div>
+            <a href="/Menu.php?id=<?=$item['id']?>" class="primary-btn">Подробнее</a>
 
             </div>
             <?php endforeach;?>
