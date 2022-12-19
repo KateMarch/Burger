@@ -55,7 +55,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
-                                        <li><a class="admin" href="Admin.php">Admin</a></li>
+                                        <li><a class="admin" href="admin.php">Admin</a></li>
                                     </ul>
                                 </nav>
                             </div>
