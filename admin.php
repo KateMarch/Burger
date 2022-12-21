@@ -167,8 +167,8 @@
         <td><?= $menus['price']?></td>
         <td><?= $menus['description']?></td>
         <td><?= $menus['img']?></td>
-        <td><a href="form_update.php?id=<?= $menus['id']?>">Редактировать</a>
-            <a href="handler/delete.php?id=<?= $menus['id']?>">Удалить</a></td>
+        <td><a id="u-<?= $menus['id']?>" href="form_update.php?id=<?= $menus['id']?>">Редактировать</a>
+            <a id="d-<?= $menus['id']?>" href="handler/delete.php?id=<?= $menus['id']?>">Удалить</a></td>
     </tr>
     <?php endforeach; ?>
     </tbody>
